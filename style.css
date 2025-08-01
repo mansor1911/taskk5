@@ -42,6 +42,9 @@ nav .items ul{
 nav .items ul li{
 list-style: none;
 }
+nav .items ul li:hover{
+background-color:#F2F3F5;
+}
 nav .items a{
     font-weight: 500;
     font-family: sans-serif;
@@ -74,14 +77,21 @@ nav .buttons button{
     background-color: #D85151;
 
 }
+nav .buttons button:hover{
+  background-color: #C92D2D;
+
+}
 
 header{
+  display:  flex;
+  align-items: center;
+  justify-content: space-between;
 background-color: #3d7a81;
 height: 683px;
 }
 
 header div.firstimg{
-position: relative;
+/* position: relative; */
 
 
 }
@@ -91,11 +101,11 @@ header div.firstimg img{
     top: 139px;
     left: 6px;
     transform: rotate(-3deg);
-    position: absolute;
+    /* position: absolute; */
 }
 
 header div.headerContent{
-    position: relative;
+    /* position: relative; */
     top: 206px;
     left: 550px;
 }
@@ -137,9 +147,9 @@ header div.searched #input1{
 
 
 header div.searched #secondi{
-    position: absolute;
-    top: 20px;
-    left: 223px;
+     position: absolute;
+     top: 20px;
+     left: 223px;
 }
 header div.searched #input2{
     border-style: none;
@@ -181,6 +191,15 @@ header div.headertypes ul li{
 header div.headertypes ul li a{
     text-decoration: none;
     color: white;
+    font-family: auto;
+}
+header div.headertypes ul li:hover{
+    color: black;
+    background-color: white;
+}
+header div.headertypes ul li a:hover{
+    text-decoration: none;
+    color: black;
     font-family: auto;
 }
 
@@ -788,3 +807,84 @@ span.logo-text{
   position: relative;
   color: white;
 }
+
+
+
+
+
+
+
+
+@media (max-width:1051px){
+
+header{
+  display: flex;
+  flex-direction: column;
+}
+
+.secondimg{
+  visibility: hidden;
+}
+}
+
+@media (max-width:965px){
+
+  nav.items ul{
+   visibility: hidden;
+  }
+  
+}
+@media (max-width:702px){
+
+  section.mainProject{
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ 
+ .project{
+    background-color: #fff;
+    position: relative;
+    flex: 0 0 30%;
+    padding: 20px;
+ }
+
+
+  
+}
+
+
+@media (max-width:540px){
+
+
+  .project{
+
+    flex: 0 0 50%;
+  }
+
+}
+
+@media (max-width:345px){
+
+
+  .project{
+
+    flex: 0 0 100%;
+  }
+
+}
+
+@media (max-width:957px){
+
+
+  .items{
+    display: none;
+  }
+
+  }
+ 
+
+
+
